@@ -4,4 +4,7 @@
 #
 python ./src/pharmacy_counting.py ./input/itcont.txt ./output/top_cost_drug.txt
 
-# python ./src/pharmacy_counting.py ./input/de_cc_data.txt ./output/top_cost_drug.txt
+
+python ./src/pharmacy_counting.py ./insight_testsuite/tests/test_1/input/itcont.txt ./insight_testsuite/tests/test_1/output/top_cost_drug.txt
+
+python ./src/pharmacy_counting.py ./insight_testsuite/tests/larger_data/input/itcont.txt ./insight_testsuite/tests/larger_data/output/top_cost_drug.txt

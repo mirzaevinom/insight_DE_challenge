@@ -42,9 +42,10 @@ with open(output_fname, 'wb') as out_f:
 
         # Write to the output file in descending order
         next_line = b','.join( [drug, bytes( str(len(doc_names[drug])) , 'utf8' ),
-                                bytes( str( int(drug_cost[drug])) , 'utf8' ) ] )
+                                bytes( str( round(drug_cost[drug], 2)) , 'utf8' ) ] )
         next_line +=b'\n'
         out_f.write(next_line)
+
 
 
 # Open and print top 10 lines of the output file

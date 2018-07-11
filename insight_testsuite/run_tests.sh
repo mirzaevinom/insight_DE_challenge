@@ -59,7 +59,7 @@ function compare_outputs {
   OUTPUT_FILENAME=top_cost_drug.txt
   PROJECT_ANSWER_PATH1=${GRADER_ROOT}/temp/output/${OUTPUT_FILENAME}
   TEST_ANSWER_PATH1=${GRADER_ROOT}/tests/${test_folder}/output/${OUTPUT_FILENAME}
-   
+
   DIFF_RESULT1=$(diff -bB ${PROJECT_ANSWER_PATH1} ${TEST_ANSWER_PATH1} | wc -l)
   if [ "${DIFF_RESULT1}" -eq "0" ] && [ -f ${PROJECT_ANSWER_PATH1} ]; then
     echo -e "[${color_green}PASS${color_norm}]: ${test_folder} ${OUTPUT_FILENAME}"
